@@ -38,4 +38,7 @@
     * `<6>解决方法3：`
        ##### 卸载Windows Powershell(不推荐切过程繁琐)
     * `<7>说明：`解决方法2 ③过程中括号里的详细步骤请去百度~
-    * ## 该解决方法适用于同种类别的问题
+* ### 所有解决方法适用于同种类别的问题
+# 四.友情链接
+* Yunzai-Bot插件库：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FyhArcadia%2FYunzai-Bot-plugins-index)|☞[Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
+* Yunzai-Bot（V3）：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FLe-niao%2FYunzai-Bot)|☞[Gitee](https://gitee.com/Le-niao/Yunzai-Bot)
