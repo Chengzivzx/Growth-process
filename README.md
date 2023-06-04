@@ -23,20 +23,20 @@
 * ### ①Windows Powershell被异常调用(多开)
 
     * `<1>问题时间：`
-       ##### 2023年4月24日 操作系统：Windows Server 2012 R2 (腾讯服务器)
+    >2023年4月24日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
     * `<2>问题过程：`
-       ##### 服务器异常卡顿，打开任务管理器发现Windows Powershell被异常调用(Windows Powershell占用过高)
+    >服务器异常卡顿，打开任务管理器发现Windows Powershell被异常调用(`Windows Powershell占用过高`)
     * `<3>问题排查：`
-       ##### 关闭云崽进程后异常解除，重新启动云崽再次异常且Windows Powershell进程无法完全关闭(会再次启动)
+    >关闭云崽进程后异常解除，重新启动云崽再次异常且Windows Powershell进程无法完全关闭(会再次启动)
     * `<4>解决方法1：`
-       ##### 更新 [椰奶插件 (yenai-plugin)](https://gitee.com/link?target=https%3A%2F%2Fwww.yenai.ren)
+    >更新 [椰奶插件 (yenai-plugin)](https://gitee.com/link?target=https%3A%2F%2Fwww.yenai.ren) 并将`config/default_config`文件夹中`whole.yaml`的`statusPowerShellStartstatusPowerShellStart`项改为`true`
     * `<5>解决方法2：`
-       ##### ①打开任务管理器(右键任务栏 → 任务管理器)
-       ##### ②找到Windows Powershell进程，右键并且选择 <打开文件位置> 后成功打开该进程目录文件夹
-       ##### ③找到该进程的应用程序，右键选择<获得管理员所有权(右键 → <属性> → <安全> → <高级> → <更改> → <高级> → <立即查找> → <选择单头像的服务器名称 例:Administrator> → <确定> → <确定> → <确定> → 修改所有用户组权限为 <完全控制> → <确定>)
-       ##### ④修改该进程应用程序的名称(不同于之前)后即可解决
+    >①打开任务管理器(右键任务栏 → 任务管理器)
+    >>②找到Windows Powershell进程，右键并且选择 <打开文件位置> 后成功打开该进程目录文件夹
+    >>>③找到该进程的应用程序，右键选择<获得管理员所有权(右键 → <属性> → <安全> → <高级> → <更改> → <高级> → <立即查找> → <选择单头像的服务器名称 例:Administrator> → <确定> → <确定> → <确定> → 修改所有用户组权限为 <完全控制> → <确定>)
+    >>>>④修改该进程应用程序的名称(不同于之前)后即可解决
     * `<6>解决方法3：`
-       ##### 卸载Windows Powershell(不推荐切过程繁琐)
+    >卸载Windows Powershell(不推荐切过程繁琐)
     * `<7>说明：`解决方法2 ③过程中括号里的详细步骤请去百度~
 * ### 所有解决方法适用于同种类别的问题
 # 四.友情链接
