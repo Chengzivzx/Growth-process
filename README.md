@@ -54,7 +54,7 @@
     >>补充:机器人需要装有`浏览器截图预览插件` 如上图弹出图片即视为成功
     >>>`私聊发送链接:https://accounts.qq.com/#/`
     >>>>成功后截图:![输入图片说明](%258YMC7GZ~WO0WXY7%7DF%5B0Y3Y.jpg)
-* ### 所有解决方法适用于同种类别的问题
-# 四.友情链接
+# 补充:所有解决方法适用于同种类别的问题
+# 友情链接
 * Yunzai-Bot插件库：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FyhArcadia%2FYunzai-Bot-plugins-index)|☞[Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
 * Yunzai-Bot（V3）：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FLe-niao%2FYunzai-Bot)|☞[Gitee](https://gitee.com/Le-niao/Yunzai-Bot)
