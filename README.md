@@ -38,6 +38,22 @@
     * `<6>解决方法3：`
     >卸载Windows Powershell(不推荐切过程繁琐)
     * `<7>说明：`解决方法2 ③过程中括号里的详细步骤请去百度~
+# 四.群聊类
+* ### ①群聊伪风控
+
+    * `<1>问题时间：`
+    >2023年6月13日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+    * `<2>问题过程：`
+    >群聊无法发送信息 私聊却可以（与风控类似-不同点见下方`问题排查`）
+    >>后台截图：![输入图片说明]($8C5R6%60_O%2593P8%25%5BGKI~021.jpg)
+    * `<3>问题排查：`
+    >![输入图片说明](N0DF9BDP%5B%7B%60LHU%60C@N3R384.jpg)
+    >>`后台报错风控但是手动上号却可以发消息且别人可以接受消息`
+    * `<4>解决方法1：`
+    >![输入图片说明](2%5D5~GX6$%7BN%5B$%7DE%5B5MPC9Y%5D4.jpg)
+    >>补充:机器人需要装有`浏览器截图预览插件` 如上图弹出图片即视为成功
+    >>>`私聊发送链接:https://accounts.qq.com/#/`
+    >>>>成功后截图:![输入图片说明](%258YMC7GZ~WO0WXY7%7DF%5B0Y3Y.jpg)
 * ### 所有解决方法适用于同种类别的问题
 # 四.友情链接
 * Yunzai-Bot插件库：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FyhArcadia%2FYunzai-Bot-plugins-index)|☞[Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
