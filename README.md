@@ -61,7 +61,7 @@
 - `<3>问题排查：`手机上号后发现不是帐号本身的问题
 - `<4>解决方法1：` **仅限Windows** 
 >首先下载一键包：☞[签名api一键包](https://gitee.com/touchscale/Qsign)
->>1.安装jdk([没有下载一键包的点这里下载](https://www.oracle.com/downloads/))并配置环境变量([配置教程](https://blog.csdn.net/Marvin_996_ICU/article/details/106240065))
+>>1.安装jdk([一键包里自带jdk安装包](https://www.oracle.com/downloads/))并配置环境变量([配置教程](https://blog.csdn.net/Marvin_996_ICU/article/details/106240065))
 >>>2.升级icqq到0.4.7（指令：pnpm install icqq@0.4.7 -w）
 >>>>3.替换（Miao-Yunzai/Yunzai-Bot）\node_modules\icqq\lib\core\devices.js
 >>>>>4.打开unidbg-fetch-qsign的 一键startAPI.bat
