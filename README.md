@@ -32,7 +32,7 @@
 </details>
 
 <br><br>
-# 四.群聊类
+# 四.消息类
 ### ①群聊伪风控
 <details>
 <summary>展开/收起</summary>
@@ -47,6 +47,33 @@
     >补充:机器人需要装有`浏览器截图预览插件` 如上图弹出图片即视为成功
     >>`私聊发送链接:https://accounts.qq.com/#/`
     >>>成功后截图:![输入图片说明](%258YMC7GZ~WO0WXY7%7DF%5B0Y3Y.jpg)
+</details>
+
+<br><br>
+
+### ②风控-错误码:45
+<details>
+<summary>展开/收起</summary>
+
+- `<1>问题时间：`2023年6月13日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- `<2>问题过程：`群聊无法发送信息 私聊也无法发送消息（与风控类似）
+    >后台截图可能出现签名api错误等提示
+- `<3>问题排查：`手机上号后发现不是帐号本身的问题
+- `<4>解决方法1：` **仅限Windows** 
+>首先下载一键包：☞[签名api一键包](https://gitee.com/touchscale/Qsign)
+>>1.安装jdk([没有下载一键包的点这里下载](https://www.oracle.com/downloads/))并配置环境变量([配置教程](https://blog.csdn.net/Marvin_996_ICU/article/details/106240065))
+>>>2.升级icqq到0.4.7（指令：pnpm install icqq@0.4.7 -w）
+>>>>3.替换（Miao-Yunzai/Yunzai-Bot）\node_modules\icqq\lib\core\devices.js
+>>>>>4.打开unidbg-fetch-qsign的 一键startAPI.bat
+>>>>>>5.打开（Miao-Yunzai/Yunzai-Bot）\config\config\bot.yaml 在最底下添加
+```
+sign_api_addr: http://127.0.0.1:80/sign
+```
+>>>>>>>6.打开（Miao-Yunzai/Yunzai-Bot）\config\config\qq.yaml 更改为协议1或2（ 1:安卓手机、 2:aPad）
+- `<5>解决方法2：`使用寒暄的脚本
+```
+bash <(curl -sL https://gitee.com/haanxuan/version/raw/master/version.sh)
+```
 </details>
 
 <br><br>
