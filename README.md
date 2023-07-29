@@ -86,8 +86,8 @@ bash <(curl -sL https://gitee.com/haanxuan/version/raw/master/version.sh)
 
 - `<1>问题时间：`2023年7月29日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
 - `<2>问题过程：`启动提示缺失依赖,按照指令安装依赖缺报错,见下图
-    >![输入图片说明](K_~8W_4MW)@Y%7DZL8%7BMLX7)J.png)
-    >>![输入图片说明](%7DZCU66RE(K%5B47S7%7D$A6LZ84.png)
+    >![输入图片说明](%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720230730010204.jpg)
+    >>![输入图片说明](%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720230730010226.jpg)
 - `<3>解决方法：`更新puppeteer.依次执行下列命令(根目录)
 ```
 pnpm uninstall puppeteer
