@@ -99,6 +99,9 @@ pnpm install puppeteer@19.8.3 -w
 node ./node_modules/puppeteer/install.js
 ```
 >执行完命令后重新安装依赖发现报错消失
+</details>
+
+<br><br>
 
 # 友情链接
 * Yunzai-Bot插件库：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FyhArcadia%2FYunzai-Bot-plugins-index)|☞[Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
