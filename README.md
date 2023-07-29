@@ -78,6 +78,28 @@ bash <(curl -sL https://gitee.com/haanxuan/version/raw/master/version.sh)
 
 <br><br>
 
+# 五.依赖类
+
+### ①频繁掉依赖
+<details>
+<summary>展开/收起</summary>
+
+- `<1>问题时间：`2023年7月29日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- `<2>问题过程：`启动提示缺失依赖,按照指令安装依赖缺报错,见下图
+    >![输入图片说明](K_~8W_4MW)@Y%7DZL8%7BMLX7)J.png)
+    >>![输入图片说明](%7DZCU66RE(K%5B47S7%7D$A6LZ84.png)
+- `<3>解决方法：`更新puppeteer.依次执行下列命令(根目录)
+```
+pnpm uninstall puppeteer
+```
+```
+pnpm install puppeteer@19.8.3 -w
+```
+```
+node ./node_modules/puppeteer/install.js
+```
+>执行完命令后重新安装依赖发现报错消失
+
 # 友情链接
 * Yunzai-Bot插件库：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FyhArcadia%2FYunzai-Bot-plugins-index)|☞[Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
 * Yunzai-Bot（V3）：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FLe-niao%2FYunzai-Bot)|☞[Gitee](https://gitee.com/Le-niao/Yunzai-Bot)
