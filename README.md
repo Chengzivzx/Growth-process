@@ -114,6 +114,7 @@ node ./node_modules/puppeteer/install.js
 - `<2>问题过程：`按照py-plugin插件教程搭建后,发送任何指令都没有反应,py服务器也已经成功启动
 - `<3>解决方法：`更新至miao-Yunzai
 >这里提供☞[便捷工具下载地址](https://yshs.lanzouy.com/i756z13upb1c)
+>>下载完成后打开,选择<2>-<云崽管理>,再选择<8>-<从官方云崽切换为喵喵云崽>
 
 </details>
 
