@@ -103,9 +103,26 @@ node ./node_modules/puppeteer/install.js
 
 <br><br>
 
+# 六.[py-plugin](https://gitee.com/realhuhu/py-plugin)插件类
+
+### ①发送指令无反应
+<details>
+<summary>展开/收起</summary>
+
+## 此解决方法仅限于原版Yunzai
+- `<1>问题时间：`2023年7月30日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- `<2>问题过程：`按照py-plugin插件教程搭建后,发送任何指令都没有反应,py服务器也已经成功启动
+- `<3>解决方法：`更新至miao-Yunzai
+>这里提供☞[便捷工具下载地址](https://yshs.lanzouy.com/i756z13upb1c)
+
+</details>
+
+<br><br>
+
 # 友情链接
 * Yunzai-Bot插件库：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FyhArcadia%2FYunzai-Bot-plugins-index)|☞[Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
 * Yunzai-Bot（V3）：☞[Github](https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2FLe-niao%2FYunzai-Bot)|☞[Gitee](https://gitee.com/Le-niao/Yunzai-Bot)
 * Salipet云崽问题合集：☞[wolai文档](https://www.wolai.com/oA43vuW71aBnv7UsEysn4T)|☞[wolai文档](https://www.wolai.com/f1M1idtvVGfeHAjcywfwmw)
 * fafa云崽问题合集：☞[wolai文档](https://www.wolai.com/d87HohAH7zgLNG3u9Z2yJz)
+* 云崽前置工具下载地址:☞[一闪提供-密码:0000](https://yshs.lanzouy.com/b09zk5u1g)
 * QQ频道交流群：☞[点击链接加入QQ频道【原神交流区】](https://pd.qq.com/s/bhj7dpaz)
