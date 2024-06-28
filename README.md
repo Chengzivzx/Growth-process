@@ -22,13 +22,24 @@
 # 三.Windows Powershell类
 ### ①Windows Powershell被异常调用(多开)
 <details>
-<summary>展开/收起</summary>
+<summary>Windows Server 2019 展开/收起</summary>
 
-- `<1>问题时间：`2023年4月24日 操作系统：`Windows Server 2012 R2 (腾讯服务器)`
+- `<1>问题时间：`2024年6月16日 操作系统：`Windows Server 2019 (京东云2c4c5m)`
+- `<2>问题过程：`服务器异常卡顿，打开任务管理器发现Windows Powershell被异常调用(`Windows Powershell占用过高`)
+- `<3>问题排查：`关闭Qsign进程后异常解除，重新启动Qsign再次异常且Windows Powershell进程无法完全关闭(会再次启动)
+- `<5>解决方法1：`卸载Windows Powershell(不推荐并且过程繁琐)或者更改Windows Powershell名称
+- 相关文档请查看 ☞ [Windows10进程powershell.exe占用CPU过高解决办法](https://blog.csdn.net/dayuang2009/article/details/102454607)
+</details>
+
+<details>
+<summary>Windows Server 2012 R2 展开/收起</summary>
+
+- `<1>问题时间：`2023年4月24日 操作系统：`Windows Server 2012 R2 (腾讯云2c2g5m)`
 - `<2>问题过程：`服务器异常卡顿，打开任务管理器发现Windows Powershell被异常调用(`Windows Powershell占用过高`)
 - `<3>问题排查：`关闭云崽进程后异常解除，重新启动云崽再次异常且Windows Powershell进程无法完全关闭(会再次启动)
 - `<4>解决方法1：`更新 [椰奶插件 (yenai-plugin)](https://gitee.com/link?target=https%3A%2F%2Fwww.yenai.ren) 并将`config/default_config`文件夹中`whole.yaml`的`statusPowerShellStartstatusPowerShellStart`项改为`true`
-- `<5>解决方法2：`卸载Windows Powershell(不推荐切过程繁琐)
+- `<5>解决方法2：`卸载Windows Powershell(不推荐并且过程繁琐)或者更改Windows Powershell名称
+- 相关文档请查看 ☞ [Windows10进程powershell.exe占用CPU过高解决办法](https://blog.csdn.net/dayuang2009/article/details/102454607)
 </details>
 
 <br><br>
@@ -37,7 +48,7 @@
 <details>
 <summary>展开/收起</summary>
 
-- `<1>问题时间：`2023年6月13日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- `<1>问题时间：`2023年6月13日 操作系统：`Windows Server 2012 R2` (腾讯云2c2g5m)
 - `<2>问题过程：`群聊无法发送信息 私聊却可以（与风控类似-不同点见下方`问题排查`）
     >后台截图：![输入图片说明]($8C5R6%60_O%2593P8%25%5BGKI~021.jpg)
 - `<3>问题排查：
@@ -53,9 +64,38 @@
 
 ### ②风控-错误码:45
 <details>
-<summary>展开/收起</summary>
+<summary>新版本风控 展开/收起</summary>
 
-- `<1>问题时间：`2023年6月13日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- ##### `<1>问题时间：`2023年6月13日持续至今
+>操作系统：`Windows Server 版本不限` 
+- ##### `<2>问题过程：`群聊无法发送信息 私聊也无法发送消息
+    >后台截图可能出现签名api错误等提示
+- ##### `<3>问题排查：`手机上号后发现不是帐号本身的问题(指账号安全异常或者已被冻结)
+- ##### `<4>解决方法1：` 下载安装Qsign以辅助icqq类Bot进行消息发送等功能
+- ### 访问以下仓库 并且下载安装对应文件：
+- ***Windows首选：***
+```
+https://github.com/CikeyQi/unidbg-fetch-qsign-gui/releases
+```
+>Windows Server 2019及以上`Qsign`推荐版本`1.1.3` `Java`推荐版本`Java8 144`
+>>Windows Server 2012及以下`Qsign`推荐版本`1.0.6` `Java`推荐版本`Java8 401`
+- ***Linux首选***
+```
+https://github.com/CikeyQi/unidbg-fetch-qsign-shell
+```
+- 安装完成后开始部署Qsign，端口等相关配置好后即可使用
+>打开（Miao-Yunzai/Yunzai-Bot）\config\config\bot.yaml 在最底下添加 其中`8080`是配置好的端口号，根据需求更改，默认8080
+```
+sign_api_addr: http://127.0.0.1:8080/sign
+```
+>>Qsign协议版本推荐8.9.78
+
+
+</details>
+<details>
+<summary>旧版本风控 展开/收起</summary>
+
+- `<1>问题时间：`2023年6月13日 操作系统：`Windows Server 2012 R2` (腾讯云2c2g5m)
 - `<2>问题过程：`群聊无法发送信息 私聊也无法发送消息（与风控类似）
     >后台截图可能出现签名api错误等提示
 - `<3>问题排查：`手机上号后发现不是帐号本身的问题
@@ -84,7 +124,7 @@ bash <(curl -sL https://gitee.com/haanxuan/version/raw/master/version.sh)
 <details>
 <summary>展开/收起</summary>
 
-- `<1>问题时间：`2023年7月29日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- `<1>问题时间：`2023年7月29日 操作系统：`Windows Server 2012 R2` (腾讯云2c2g5m)
 - `<2>问题过程：`启动提示缺失依赖,按照指令安装依赖缺报错,见下图
     >![输入图片说明](%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720230730010204.jpg)
     >>![输入图片说明](%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720230730010226.jpg)
@@ -110,7 +150,7 @@ node ./node_modules/puppeteer/install.js
 <summary>展开/收起</summary>
 
 ## 此解决方法仅限于原版Yunzai
-- `<1>问题时间：`2023年7月30日 操作系统：`Windows Server 2012 R2` (腾讯服务器)
+- `<1>问题时间：`2023年7月30日 操作系统：`Windows Server 2012 R2` (腾讯云2c2g5m)
 - `<2>问题过程：`按照py-plugin插件教程搭建后,发送任何指令都没有反应,py服务器也已经成功启动
 - `<3>解决方法：`更新至miao-Yunzai
 >这里提供☞[便捷工具下载地址](https://yshs.lanzouy.com/i756z13upb1c)
